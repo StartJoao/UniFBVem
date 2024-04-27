@@ -1,16 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+body {
+  background-color: var(--primary-light);
 
-* {
-  font-family: "Inter", sans-serif;
-  margin: 0px;
-  padding: 0px;
+  --primary-darker: #030303;
+  --primary-dark: #111111;
+  --primary-gray: #a0a0a0;
+  --primary-light-gray: #E7E7E7;
+  --primary-light: #F0F0F0;
 }
+
 header {
   display: flex;
   justify-content: space-between;
   padding: 16px;
-
 }
+
 nav {
   display: flex;
   gap: 1rem;
@@ -18,33 +21,29 @@ nav {
   cursor: pointer;
 }
 
-button {
+.checkout-button {
   width: 90px;
-  padding: 8px;
+  padding: 8px 16px;
   text-align: center;
-  background-color: black;
-  color: white;
+  background-color: var(--primary-darker);
+  color: var(--primary-light);
   border-radius: 8px;
+  border: 1px solid var(--primary-darker);
   cursor: pointer;
+
+  transition: all 250ms;
 }
 
-button:hover {
-  color: black;
-  background-color: white;
-  transform: scale(1.1);
+.checkout-button:hover {
+  background-color: var(--primary-light);
+  color: var(--primary-darker);
 }
 
-button:active {
-  color: black;
-  background-color: gray;
-  transform: scale(0.9);
-}
 #banner{
     display: flex;
     width: 50%;
     height: fit-content;
     border-radius: 16px;
-
 }
 
 #firstPost{

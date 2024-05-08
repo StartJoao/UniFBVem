@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.example {
+  padding: 20px;
+  color: white;
+}
+/* Dispositivos extra pequenos (celulares, 600px e inferiores) */
+@media only screen and (max-width: 600px) {
+  .example {background: red;}
+}
+
+/* Dispositivos pequenos (Tablets - Retrato e celulares grandes, 600px e superiores) */
+@media only screen and (min-width: 600px) {
+  .example {background: green;}
+}
+
+/* Dispositivos médios (Tablets - paisagem, 768px e superiores) */
+@media only screen and (min-width: 768px) {
+  .example {background: blue;}
+} 
+
+/* Dispositivos grandes (notebooks/desktops, 992px e superiores) */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+} 
+
+/* Dispositivos extra grandes (notebooks/desktops grandes, 1200px e superiores) */
+@media only screen and (min-width: 1200px) {
+  .example {background: pink;}
+}
+</style>
